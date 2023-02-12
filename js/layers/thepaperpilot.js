@@ -61,7 +61,6 @@ addLayer("tpp", {
     },
 
     effect() {
-        if (tmp[this.layer].deactivated) return {}
         let eff = {
             compBonus: player.tpp.points.add(10).log().pow(player.tpp.total.add(1).log10()),
 
